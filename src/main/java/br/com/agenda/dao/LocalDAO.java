@@ -75,6 +75,8 @@ public class LocalDAO {
 		}
 	}
 
+	// delete
+	
 	public void excluir(Long id) throws SQLException, ClassNotFoundException {
 		String excluir = "DELETE FROM LOCAL WHERE ID = ?";
 
