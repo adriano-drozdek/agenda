@@ -4,6 +4,12 @@ public class Usuario {
 	private long id;
 	private String nome;
 
+	public Usuario(long id, String nome) {
+		super();
+		this.id = id;
+		this.nome = nome;
+	}
+
 	public long getId() {
 		return id;
 	}
@@ -18,6 +24,11 @@ public class Usuario {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", nome=" + nome + "]";
 	}
 
 }
